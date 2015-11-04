@@ -49,6 +49,8 @@ function updateWeather(){
 								$("#todayLowDisplay").text(todayLowF+"°F");
 								$("#tomorrowHighDisplay").text(tomorrowHighF+"°F");
 								$("#tomorrowLowDisplay").text(tomorrowLowF+"°F");
+								pickClothesToday();
+								pickClothesTmrw();
 					})										
 					.fail(function(error){
 							console.log(error);
@@ -56,7 +58,53 @@ function updateWeather(){
 	})
 	.fail(function(error){
 		console.log(error);
-	})
+	})	
 }
+function pickClothesToday(){
+		if(todayLowF<41){
+		$("#clothesToday").attr("src","downjacket.jpeg")
+	}else if(todayLowF<50){
+		$("#clothesToday").attr("src","coatLadies.jpeg")
+	}else if(todayHighF<59){
+		$("#clothesToday").attr("src","sweater.jpeg")
+	}else if(todayHighF<68){
+		$("#clothesToday").attr("src","cardigan.jpeg")
+	}else if(todayHighF<75){
+		$("#clothesToday").attr("src","shirt.jpeg")
+	}else{
+		$("#clothesToday").attr("src","Tshirt.jpeg")
+	}
+}
+function pickClothesTmrw(){
+	if(tomorrowLowF<41){
+		$("#clothesTmrw").attr("src","downjacket.jpeg")
+	}else if(tomorrowLowF<50){
+		$("#clothesTmrw").attr("src","coatLadies.jpeg")
+	}else if(tomorrowHighF<59){
+		$("#clothesTmrw").attr("src","sweater.jpeg")
+	}else if(tomorrowHighF<68){
+		$("#clothesTmrw").attr("src","cardigan.jpeg")
+	}else if(tomorrowHighF<75){
+		$("#clothesTmrw").attr("src","shirt.jpeg")
+	}else{
+		$("#clothesTmrw").attr("src","Tshirt.jpeg")
+	}
+}
+
 })();
 
+// function pickClothesToday(){
+// 		if(todayLowF<41){
+// 		$("#clothesTmrw").attr("src","downjacket.jpeg")
+// 	}else if(todayLowF<50){
+// 		$("#clothesTmrw").attr("src","coatLadies.jpeg")
+// 	}else if(todayHighF<59){
+// 		$("#clothesTmrw").attr("src","sweater.jpeg")
+// 	}else if(todayHighF<68){
+// 			$("#clothesTmrw").attr("src","cardigan.jpeg")
+// 	}else if(todayHighF<75){
+// 		$("#clothesTmrw").attr("src","shirt.jpeg")
+// 	}else{
+// 		$("#clothesTmrw").attr("src","Tshirt.jpeg")
+// 	}
+// }

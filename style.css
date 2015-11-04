@@ -1,5 +1,5 @@
 .btn-warning{
-color:black;
+  color:black;
 }
 
 .heading{
@@ -9,7 +9,7 @@ color:black;
 	margin-top: 0px;
 }
 .row, .panel-heading, .panel-body{
-text-align: center;
+  text-align: center;
 }
 .panel-body{
 	background-color: white;
@@ -19,25 +19,14 @@ text-align: center;
 }
 
 body{
-/*	border: 10px solid transparent;*/
-position: absolute;
-background: url("backgroundsheet.jpg") no-repeat center center fixed; 
-color:#2E2E2E;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-text-align: center;
-}
-/*
-body::after {
-  content: "";
-  background: url(image.jpg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  padding-right: 50px;
+  margin: 0 auto;
   position: absolute;
-  z-index: -1;   
-}*/
+  background: url("backgroundsheet.jpg") no-repeat center center fixed; 
+  color:#2E2E2E;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
