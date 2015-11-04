@@ -1,7 +1,6 @@
 (function(){
 	"use strict";
 
-
 $(document).ready(init);
 var apiUrl = "http://api.wunderground.com/api/59162e870626b73c/";
 var location;
@@ -46,10 +45,10 @@ function updateWeather(){
 							tomorrowLowF=data.forecast.simpleforecast.forecastday[1].low.fahrenheit
 								$("#cityDisplay").text(location);
 								$("#dateDisplay").text(date);
-								$("#todayHighDisplay").text(todayHighF);
-								$("#todayLowDisplay").text(todayLowF);
-								$("#tomorrowHighDisplay").text(tomorrowHighF);
-								$("#tomorrowLowDisplay").text(tomorrowLowF);
+								$("#todayHighDisplay").text(todayHighF+"°F");
+								$("#todayLowDisplay").text(todayLowF+"°F");
+								$("#tomorrowHighDisplay").text(tomorrowHighF+"°F");
+								$("#tomorrowLowDisplay").text(tomorrowLowF+"°F");
 					})										
 					.fail(function(error){
 							console.log(error);
