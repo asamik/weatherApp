@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+	 <link rel="stylesheet.css" class="css">
+</head>
+<body>
+	<h1>Weather</h1>
+	
+<div class="container">
+	<div class="row">
+		<label for="userCity">Your city:</label>
+		<input type="text" id="userCity">
+		<button id="changeCity" >Change city</button>
+		<button id="getWeather">Get Weather</button>
+	</div>
+	<div class="row">
+		<div class="col-md-5 col-xs-12">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 panel-heading panel-success" >Date</div>
+				<div class="panel-body col-lg-6 panel-success" id="dateDisplay"></div>	
+			</div>	
+			<div class="row">		
+				<div class="col-md-6 col-xs-6 panel-heading panel-success" >Today High</div>
+				<div class="col-md-6 col-xs-6 panel-heading panel-success" >Today Low</div>
+				<div class="panel-body col-md-6 col-xs-6 panel-success" id="todayHighDisplay"></div>				
+				<div class="panel-body col-md-6 col-xs-6 panel-success" id="todayLowDisplay"></div>    			
+				</div>
+			</div>	
+		<div class="col-md-5 col-xs-12">
+			<div class="row">				
+				<div class="col-md-12 col-xs-12 panel-heading panel-success" >City</div>			
+				<div class="col-lg-6 panel-body panel-success" id="cityDisplay"></div>  
+			</div>
+			<div class="row">	
+					<div class="panel-heading col-md-6 col-xs-6 panel-success">Tomorrow High</div>
+					<div class="panel-heading col-md-6 col-xs-6 panel-success">Tomorrow Low</div>
+					<div class="col-md-6 col-xs-6 panel-body panel-success" id="tomorrowHighDisplay"></div>				
+					<div class="col-md-6 col-xs-6 panel-body panel-success" id="tomorrowLowDisplay"></div>  
+			</div>	
+		</div>
+	</div>  
+<!-- 			<div class="col-md-12 col-xs-12">
+				<div class="row">
+				<div class="col-md-12 col-xs-12 panel-heading panel-success" >Clothes Index Today</div>
+				<div class="panel-body col-lg-6 panel-success" id="clothesDisplay"></div>	
+			</div>
+		</div>	 -->			
+</div>
+
+	</div>
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4"></div>
+  </div>
+ </div>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>
