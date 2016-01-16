@@ -22,7 +22,7 @@ body{
   padding-right: 50px;
   margin: 0 auto;
   position: absolute;
-  background: url("backgroundsheet.jpg") no-repeat center center fixed; 
+  background: url("assets/background.jpg") no-repeat center center fixed; 
   color:#2E2E2E;
   -webkit-background-size: cover;
   -moz-background-size: cover;
