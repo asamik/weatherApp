@@ -1,32 +1,63 @@
-.btn-warning{
+.btn-warning {
   color:black;
 }
 
-.heading{
+button {
+  background-color: #59BDDE;
+  border: none;
+}
+
+.heading {
 	color:black;
 	background-color: white;
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
-.row, .panel-heading, .panel-body{
+.panel-heading, .panel-body {
   text-align: center;
 }
-.panel-body{
+.panel-body, .panel-info {
 	background-color: white;
+  border-color: white;
 }
-.row{
+.container {
 	margin: 2vh;
+  position: relative;
 }
 
-body{
-  padding-right: 50px;
-  margin: 0 auto;
+body {
+  font-family: 'Satisfy', cursive;
   position: absolute;
-  background: url("assets/background.jpg") no-repeat center center fixed; 
   color:#2E2E2E;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
+}
+
+.clothes {
+  width:225px;
+  height:225px;
+}
+
+.day {
+  display: inline-block;
+  /*margin: 0 auto;*/
+  /*float: none;*/
+}
+
+.image-left {
+  float: left;  
+  height: 10vh;
+}
+
+.image-right {
+  float: right;
+  height: 10vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }

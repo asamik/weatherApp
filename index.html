@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>Weather you need it</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.min.js">
+  <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,63 +14,85 @@
   <div class="container">
     <div class="row  heading">
       <div class="col-md-12 col-xs-12">
+      <img class="image-left" src="assets/three.png">
+      <img class="image-right" src="assets/four.png"> 
         <h1>Weather you need it</h1>
       </div>
     </div>
-    <div class="row  heading">
-      <label for="userCity">Your city:</label>
+    <div class="row heading">
+      <label for="userCity">Enter Your City:</label>
       <input type="text" id="userCity">
-      <button id="changeCity" class="btn-warning">Change city</button>
+      <button id="changeCity">Change city</button>
     </div>
-    <div class="row">
-      <div class="col-md-5 col-xs-12">
-        <div class="row">
-          <div class="panel panel-info">
-            <div class="col-md-12 col-xs-12 panel-heading panel-success">Date</div>
-            <div class="panel-body col-md-12 col-xs-12 panel-success" id="dateDisplay"></div>
+
+    <div class="content">
+        <div class="col-md-6 col-xs-12 day">
+          <div class="row">
+              <div class="panel panel-info">
+                <div class="col-md-12 col-xs-12 panel-heading panel-success">Time and Date</div>
+                <div class="panel-body col-md-12 col-xs-12 panel-success" id="dateDisplay"></div>
+              </div>
           </div>
         </div>
-        <div class="row">
-          <div class="panel panel-info">
-            <div class="col-md-6 col-xs-6 panel-heading panel-success">Today High Temp</div>
-            <div class="col-md-6 col-xs-6 panel-heading panel-success">Today Low Temp</div>
-            <div class="panel-body col-md-6 col-xs-6 panel-success" id="todayHighDisplay"></div>
-            <div class="panel-body col-md-6 col-xs-6 panel-success" id="todayLowDisplay"></div>
+        <div class="col-md-6 col-xs-12 day">
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="col-md-12 col-xs-12 panel-heading panel-success">City</div>
+              <div class="col-md-12 col-xs-12 panel-body panel-success" id="cityDisplay"></div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="panel panel-info">
-            <div class="col-md-12 col-xs-12 panel-heading panel-success">What to wear today</div>
-            <div class="col-md-12 col-xs-12 panel-body panel-success" id="todayClothesDisplay"></div>
-            <img id="clothesToday">
+
+      <div id="maincontents">
+        <div class="col-md-6 col-xs-12 day">
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="col-xs-6 panel-heading">Today High</div>
+              <div class="col-xs-6 panel-heading">Today Low</div>
+              <div class="panel-body col-xs-6" id="todayHighDisplay"></div>
+              <div class="panel-body col-xs-6" id="todayLowDisplay"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="col-md-12 col-xs-12 panel-heading panel-success">Wondering what to wear today? Wear this!</div>
+              <div class="col-md-12 col-xs-12 panel-body panel-success" id="todayClothesDisplay"></div>
+              <img id="clothesToday">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-5 col-xs-12">
-        <div class="row">
-          <div class="panel panel-info">
-            <div class="col-md-12 col-xs-12 panel-heading panel-success">City</div>
-            <div class="col-md-12 col-xs-12 panel-body panel-success" id="cityDisplay"></div>
+
+        <div class="col-md-6 col-xs-12 day">
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="col-xs-6 panel-heading">Tomorrow High</div>
+              <div class="col-xs-6 panel-heading">Tomorrow Low</div>
+              <div class="col-xs-6 panel-body" id="tomorrowHighDisplay"></div>
+              <div class="col-xs-6 panel-body" id="tomorrowLowDisplay"></div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="panel panel-info">
-            <div class="col-md-6 col-xs-6 panel-heading panel-success">Tomorrow High Temp</div>
-            <div class="col-md-6 col-xs-6 panel-heading panel-success">Tomorrow Low Temp</div>
-            <div class="col-md-6 col-xs-6 panel-body panel-success" id="tomorrowHighDisplay"></div>
-            <div class="col-md-6 col-xs-6 panel-body panel-success" id="tomorrowLowDisplay"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="panel panel-info">
-            <div class="col-md-12 col-xs-12 panel-heading panel-success">What to wear tomorrow</div>
-            <div class="col-md-12 col-xs-12 panel-body panel-success" id="tmwClothesDisplay">
-              <img id="clothesTmrw">
+
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="col-md-12 col-xs-12 panel-heading">...and wear this tomorrow!</div>
+              <div class="col-md-12 col-xs-12 panel-body" id="tmwClothesDisplay">
+                <img id="clothesTmrw">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="footer">
+      <!-- <img class="image-left" src="assets/two.png"> -->
+      <img class="image-right" src="assets/one.png">
+      <footer>
+        <small>Copyright ©<span id="year"></span> Asami Kawamoto</small>
+      </footer>
+    </div>
+  </div>
+    <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
