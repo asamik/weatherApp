@@ -2,7 +2,7 @@
 _by Asami Kawamoto
 
 ## Deployed to:
-http://asamik.github.io/weatherApp/
+http://asamik.github.io/weatherapp/
 
 Have you ever asked yourself whether you should to bring a coat with you or not because you are not sure how hot and/or cold it will be?  
 Well, this is my solution to the problem!
